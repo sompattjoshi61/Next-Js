@@ -75,6 +75,21 @@ app
 
 -----------------------------------------------------------
 
+catch-all segment 
+
+when there are are multiple dynamic routes and it becomes a bit complex to handle we use cache-all segment routing 
+
+eg : localhost:3000/docs/feature1/concept1
+
+https://ibb.co/35wBG4Cj
+
+app
+    |_ docx(folder)
+        |_ [...slug] (Folder)  -> Catch-all Segment
+            |_ page.tsx
+
+-----------------------------------------------------------
+
 
 
 
