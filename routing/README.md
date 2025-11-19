@@ -113,7 +113,22 @@ export default function NotFound() {
     );
 }
 
+-----------------------------------------------------------
 
+Private folder -> This folder is used to hide the routes from the user
+Folder will be created but routs will not 
+
+app
+    |_ _lib(folder)
+        |_ page.tsx
+
+Just put "_" (underscore) before the folder name to mak eit private
+
+Private folders are super useful for a bunch of things:
+- Keeping your UI logic separate from routing logic
+- Having a consistent way to organize internal files in your project
+- Making it easier to group related files in your code editor
+- Avoiding potential naming conflicts with future Next.js file naming conventions
 
 
 
