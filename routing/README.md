@@ -90,6 +90,32 @@ app
 
 -----------------------------------------------------------
 
+Page Not Found Js
+
+app
+    |_ not-found.tsx
+
+-> Not found page does not accept props directly 
+we can implement through usePathname hook
+
+"use client";
+
+import { usePathname } from "next/navigation";
+
+export default function NotFound() {
+    const pathname = usePathname();
+    return (
+        <div>
+            <h1>404 - Page Not Found</h1>
+            <p>Could not find requested resources</p>
+            <p>Requested URL: {pathname}</p>
+        </div>
+    );
+}
+
+
+
+
 
 
 
